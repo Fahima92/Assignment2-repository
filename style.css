@@ -123,6 +123,12 @@ footer p {
     justify-content: space-around;
 }
 
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-whatsapp-square {
+    font-size: 2em;
+}
+
 /*mobile view*/
 @media screen and (max-width:576px) {
     .flexible-display {
