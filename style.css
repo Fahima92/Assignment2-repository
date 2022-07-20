@@ -1,5 +1,36 @@
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+
+}
+
+.flexible-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-color {
+    background-color: black;
+}
+
+.bg-color p {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.link-button {
+    text-decoration: none;
+    background-image: linear-gradient(tomato, #FF5050);
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500px;
+    font-size: 20px;
 }
 
 .card {
@@ -40,13 +71,17 @@ li a {
     font-weight: 600;
 }
 
-.flex {
+.split {
     display: flex;
     justify-content: space-around;
 }
 
 @media screen and (max-width:576px) {
-    .flex {
+    .flexible-display {
+        flex-direction: column;
+    }
+
+    .split {
         flex-direction: column;
     }
 
@@ -57,10 +92,11 @@ li a {
     .container {
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .flex {
+    .split {
         flex-direction: column;
     }
 
