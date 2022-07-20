@@ -9,6 +9,7 @@ h1 {
 
 }
 
+
 .flexible-display {
     display: flex;
     justify-content: space-between;
@@ -48,6 +49,11 @@ h1 {
     border: 1px solid lightgray;
     border-radius: 10px;
     padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card img {
@@ -93,6 +99,7 @@ li a {
     width: 90%;
 
 }
+
 
 /*Footer section*/
 footer {
@@ -179,5 +186,7 @@ footer p {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+
+
 
 }
