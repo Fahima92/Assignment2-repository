@@ -1,7 +1,15 @@
+body {
+    margin: 0 auto;
+}
+
 .card {
     border: 1px solid lightgray;
     border-radius: 10px;
     padding: 10px;
+}
+
+.card img {
+    width: 100%;
 }
 
 .container {
@@ -13,7 +21,6 @@
 .left-blog {
     background-color: black;
     text-decoration: none;
-    float: left;
     padding-right: 30px;
     width: 25%;
 }
@@ -36,4 +43,41 @@ li a {
 .flex {
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width:576px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .left-blog {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left-blog {
+        width: 100%;
+        background-color: white;
+        padding: 50px;
+    }
+
+    .left-blog li {
+        display: inline;
+        border: 2px solid lightgray;
+        margin-left: 20px;
+    }
+
 }
