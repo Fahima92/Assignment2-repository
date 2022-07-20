@@ -148,6 +148,13 @@ footer p {
 
     .left-blog {
         width: 100%;
+        background-color: white;
+        padding: 50px;
+    }
+
+    .left-blog li {
+        border: 2px solid lightgray;
+        margin-left: -100px;
     }
 
     .container {
@@ -185,8 +192,8 @@ footer p {
     .footer-display {
         justify-content: space-evenly;
         flex-wrap: wrap;
-    }
 
+    }
 
 
 }
